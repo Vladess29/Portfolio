@@ -1,0 +1,133 @@
+// section,footer{
+//     display: none !important; 
+// }
+.form {
+    // display: block !important;
+    padding: 60px 0;
+    background-color: #F2EFE6;
+    .container {
+        .form-main__wrapper {
+            display: flex;
+            justify-content: space-between;
+            @media (max-width: 1024px) {
+                flex-direction: column;
+            }
+            .form-main__left {
+                @media (max-width: 1024px) {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+                align-items: center;
+                }
+                .form-left__title {
+                    font-family: Recoleta;
+                    font-size: 48px;
+                    font-weight: 600;
+                    line-height: 54px;
+                    text-align: left;
+                    color: #163A24;
+                    @media (max-width: 420px) {
+                        font-size: 35px;
+                        line-height: 40px;
+                        }
+                }
+                
+                .form-left__text {
+                    font-family: Noto Sans;
+                    font-size: 18px;
+                    font-weight: 400;
+                    line-height: 27px;
+                    text-align: left;
+                    color: #163A24;
+                }
+            }
+            .form-main__right {
+                @media (max-width: 1024px) {
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    align-items: center;
+                    }
+                .form-right__wrapper {
+                    position: relative;
+                    @media (max-width: 1024px) {
+                        margin-top: 20px;
+                        }
+                        @media (max-width: 420px) {
+                            display: flex;
+                            flex-direction: column;
+                            }
+                        
+                    .form-right {
+                        width: 553px;
+                        height: 52px;
+                        padding-left: 15px;
+                        padding-right: 120px;
+                        border-radius: 255px;
+                        border: 1px solid #F2EFE6;
+                        // position: relative;
+                        @media (max-width: 600px) {
+                            width: 400px;
+                            }
+                            @media (max-width: 420px) {
+                                width: 300px;
+                                }
+                    }
+                    .form-button {
+                        position: absolute;
+                        font-family: Noto Sans;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 21.79px;
+                        text-align: center;
+                        color: white;
+                        background-color: #15762E;
+                        border-radius: 160px;
+                        border: none;
+                        padding: 15px 25px;
+                        right: 0px;
+                        top: 0px;
+                        transition: all .3s ease-in-out;
+                        &:hover {
+                            color: #F7BC28;
+                            background-color: #33af52;
+                        }
+                        @media (max-width: 420px) {
+                            position: unset;
+                            margin-top: 10px;
+                            }
+                    }
+                }
+                .form-right__under {
+                    width: 524px;
+                    @media (max-width: 600px) {
+                        width: 100%;
+                        }
+                    .form-right__text {
+                        font-family: Noto Sans;
+                        font-size: 14px;
+                        font-weight: 400;
+                        line-height: 21px;
+                        text-align: left;
+                        color: #163A24;
+                        @media (max-width: 1024px) {
+                            text-align: center;
+                            }
+                        a {
+                            font-family: Noto Sans;
+                            font-size: 14px;
+                            font-weight: 400;
+                            line-height: 21px;
+                            text-align: left;
+                            color: #198C36;
+                            transition: all .3s ease-in-out;
+                            &:hover {
+                                border-bottom: 1px solid #198C36;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

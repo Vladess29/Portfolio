@@ -1,0 +1,92 @@
+// section,footer{
+//     display: none !important; 
+// }
+.consider {
+    // display: block !important;
+    padding-bottom: 120px;
+    .container {
+        .consider-title {
+            font-family: Recoleta;
+            font-size: 48px;
+            font-weight: 600;
+            line-height: 54px;
+            text-align: center;
+            color: #163A24;
+            
+        }
+        .consider-text {
+            font-family: Noto Sans;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 27px;
+            text-align: center;
+            color: #163A24;
+
+        }
+        .consider-item__wrapper {
+            display: flex;
+            justify-content: space-between;
+            @media (max-width: 1024px) {
+                flex-direction: column;
+                align-items: center;
+            }
+            .consider-item {
+                padding: 50px 40px 60px 40px;
+                background-color: #FBFAF7;
+                border-radius: 15px;
+                // box-shadow: 5px 5px 20px 0px #E9E4D5;
+                border: 1px solid rgba(3, 7, 8, 0.089);
+                width: 30%;
+                &:hover {
+                    box-shadow: 5px 5px 20px 5px #E9E4D5;
+                }
+                @media (max-width: 1024px) {
+                    width: 50%;
+                    &:not(:first-child) {
+                        margin-top: 30px;
+                    }
+                }
+                @media (max-width: 1024px) {
+                    width: 90%;
+                }
+                img {
+
+                }
+                .consider-item_title {
+                    font-family: Recoleta;
+                    font-size: 28px;
+                    font-weight: 600;
+                    line-height: 31.5px;
+                    text-align: left;
+                    color: #163A24;
+                    margin-top: 20px;
+                    // width: 80%;
+                }
+                ul {
+                    li {
+                        font-family: Noto Sans;
+                        font-size: 16px;
+                        font-weight: 400;
+                        line-height: 21.79px;
+                        text-align: left;
+                        color: #163A24;
+                        margin-top: 20px;
+                        position: relative;
+                        padding-left: 24px;
+
+                        &::before {
+                            content: '';
+                            width: 8px;
+                            height: 8px;
+                            background-color: #163A24;
+                            border-radius: 50%;
+                            position: absolute;
+                            left: 0;
+                            top: 6px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

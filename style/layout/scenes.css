@@ -1,0 +1,27 @@
+.scenes {
+  padding: 180px 98px 124px 98px;
+}
+.scenes .container .scenes-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.scenes .container .scenes-wrapper .scenes-left .scenes-title {
+  font-family: Recoleta;
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 54px;
+  text-align: left;
+  color: #163A24;
+}
+.scenes .container .scenes-wrapper .scenes-left .scenes-text {
+  font-family: Noto Sans;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 27px;
+  text-align: left;
+  color: #163A24;
+}
