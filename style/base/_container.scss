@@ -3,19 +3,20 @@
   margin: 0 auto;
   padding: 0;
   @media (max-width: $wide-screen) {
-    width: 1200px;
-  }
-  @media (max-width: $desktop-wide) {
-    width: 960px;
-  }
-  @media (max-width: $desktop) {
-    width: 924px;
-  }
-  @media (max-width: $ipad) {
     width: 670px;
   }
+  @media (max-width: $desktop-wide) {
+    width: 670px;
+  }
+  @media (max-width: $desktop) {
+    width: 670px;
+  }
+  @media (max-width: $ipad) {
+    width: 480px;
+  }
   @media (max-width: $tablet) {
-    width: 100%;
+    width: 90%;
+    // overflow-x: hidden;
     padding: 0 50px;
   }
   @media (max-width: $phone-wide) {

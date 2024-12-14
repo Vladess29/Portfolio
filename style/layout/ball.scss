@@ -1,0 +1,30 @@
+body {
+    overflow-x: hidden;
+    position: relative;
+    .leftball {
+        position: absolute;
+        left: -500px;
+        top: -200px;
+        animation: rotation 50s infinite 2s linear;
+        width: 55%;
+    }
+    .rightball {
+        position: absolute;
+        right: -400px;
+        top: 300px;
+        animation: rotation 50s infinite 2s linear;
+        width: 50%;
+    }
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0);
+    }
+    50% {
+        transform: rotate(180deg);
+    }
+    100% {
+        transform: rotate(-180deg);
+    }
+}

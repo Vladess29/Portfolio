@@ -28,10 +28,10 @@
 // slider
 
 $(document).ready(function(){
-    $('.partners-slider__wrapper').slick({
+    $('.skill-slider').slick({
         infinite: true,
-        slidesToShow: 5,
-        slidesToScroll: 5,
+        slidesToShow: 8,
+        slidesToScroll: 8,
         speed: 20000,
         dots: false,
         autoplay: true,
@@ -48,8 +48,8 @@ $(document).ready(function(){
             {
               breakpoint: 1024,
               settings: {
-                slidesToShow: 3,
-                slidesToScroll: 3,
+                slidesToShow: 6,
+                slidesToScroll: 5,
               }
             },
             {
@@ -63,38 +63,38 @@ $(document).ready(function(){
             {
               breakpoint: 480,
               settings: {
-                slidesToShow: 1,
-                slidesToScroll: 2,
-                speed: 8000,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                speed: 2000,
               }
             }
           ]
     });
   });
 
-//   pop up
+// //   pop up
 
-const popupBtn = document.querySelector('.header-btn'); // находим кнопку по её классу
-const popup = document.querySelector('.popup-bg'); // находим попап по его классу
-const closeBtn = document.querySelector('.close-popup'); // находим кнопку закрытия попапа по её классу
-const html = document.querySelector('html');
+// const popupBtn = document.querySelector('.header-btn'); // находим кнопку по её классу
+// const popup = document.querySelector('.popup-bg'); // находим попап по его классу
+// const closeBtn = document.querySelector('.close-popup'); // находим кнопку закрытия попапа по её классу
+// const html = document.querySelector('html');
 
-// Ниже мы отслеживаем клик по кнопке, которая вызвает попап
-popupBtn.addEventListener('click', function() {
-    popup.classList.add('active'); // тут мы добавляем класс active к попапу
-    html.classList.add('no-scroll');
-});
+// // Ниже мы отслеживаем клик по кнопке, которая вызвает попап
+// popupBtn.addEventListener('click', function() {
+//     popup.classList.add('active'); // тут мы добавляем класс active к попапу
+//     html.classList.add('no-scroll');
+// });
 
-// Ниже мы отслеживаем клик по кнопке, которая закрывает попап
-closeBtn.addEventListener('click', function() {
-    popup.classList.remove('active'); // тут мы удаляем класс active к попапу
-    html.classList.remove('no-scroll');
-});
+// // Ниже мы отслеживаем клик по кнопке, которая закрывает попап
+// closeBtn.addEventListener('click', function() {
+//     popup.classList.remove('active'); // тут мы удаляем класс active к попапу
+//     html.classList.remove('no-scroll');
+// });
 
-// ===== Mobile menu script ===== \\
-const burgerBtn = document.querySelector('.burger-menu');
-const mobileMenu = document.querySelector('.mobile-popup');
-burgerBtn.addEventListener('click', function() {
-    this.classList.toggle('active');
-    mobileMenu.classList.toggle('active');
-});
+// // ===== Mobile menu script ===== \\
+// const burgerBtn = document.querySelector('.burger-menu');
+// const mobileMenu = document.querySelector('.mobile-popup');
+// burgerBtn.addEventListener('click', function() {
+//     this.classList.toggle('active');
+//     mobileMenu.classList.toggle('active');
+// });
