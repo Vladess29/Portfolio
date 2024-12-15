@@ -12,6 +12,9 @@
             border-color: #0058DC;
             border-bottom: none;
             border-radius: 10px 10px 0 0;
+            @media (max-width: 450px) {
+                padding: 0 5px;
+            }
             legend {
                 font-family: Aldrich;
                 font-size: 20px;

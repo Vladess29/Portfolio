@@ -2,18 +2,30 @@ body {
     overflow-x: hidden;
     position: relative;
     .leftball {
-        position: absolute;
+        position: fixed;
         left: -500px;
         top: -200px;
-        animation: rotation 50s infinite 2s linear;
+        animation: rotation 50s infinite linear;
         width: 55%;
+        //transform: translateX(-800px);
+        @media (max-width: 1024px) {
+            left: -295px;
+            top: -195px;
+            z-index: 99999;
+            width: 635px;
+            position: absolute;
+        }
     }
     .rightball {
-        position: absolute;
+        position: fixed;
         right: -400px;
         top: 300px;
-        animation: rotation 50s infinite 2s linear;
+        animation: rotation 50s infinite linear;
         width: 50%;
+        //transform: translateX(600px);
+        @media (max-width: 1024px) {
+            display: none;
+        }
     }
 }
 
