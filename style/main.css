@@ -444,6 +444,8 @@ body {
 }
 .projects .container .project h2 {
   padding: 12px 28px;
+  min-width: 212px;
+  text-align: center;
 }
 .projects .container .projects-wrapper {
   margin-top: 81px;
@@ -463,9 +465,9 @@ body {
   margin-top: 30px;
   position: relative;
 }
-@media (max-width: 1023px) {
+@media (max-width: 1024px) {
   .projects .container .projects-wrapper .projects-item .projects-item__arrow {
-    margin-top: 65px;
+    display: none;
   }
 }
 .projects .container .projects-wrapper .projects-item .projects-item__right {
@@ -488,12 +490,13 @@ body {
   }
 }
 .projects .container .projects-wrapper .projects-item .projects-item__right .projects-item__main {
-  width: 65%;
+  width: 100%;
   margin-left: 48px;
 }
 @media (max-width: 1023px) {
   .projects .container .projects-wrapper .projects-item .projects-item__right .projects-item__main {
     width: 100%;
+    margin-left: 0;
   }
 }
 @media (max-width: 550px) {
