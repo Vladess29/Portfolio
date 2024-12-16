@@ -179,7 +179,7 @@ html * {
   color: white;
   padding: 13px 60px 11px 60px;
   background-color: transparent;
-  border: 2px solid #0058DC;
+  border: 2px solid yellow;
   border-radius: 10px;
   position: relative;
   z-index: 5;
@@ -287,7 +287,7 @@ html * {
   }
 }
 .footer .container fieldset {
-  border-color: #0058DC;
+  border-color: yellow;
   border-bottom: none;
   border-radius: 10px 10px 0 0;
 }
@@ -364,8 +364,8 @@ html * {
 }
 
 .main-banner {
-  background: rgb(0, 21, 126);
-  background: radial-gradient(circle, rgba(0, 21, 126, 0.719) 0%, rgb(0, 0, 0) 250px);
+  background: rgb(218, 214, 3);
+  background: radial-gradient(circle, rgba(238, 255, 6, 0.479) 0%, rgba(255, 217, 3, 0) 250px);
   background-position: 0 70px;
   background-repeat: no-repeat;
   padding-top: 183px;
@@ -401,7 +401,7 @@ html * {
   text-underline-position: from-font;
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
-  color: #0058DC;
+  color: yellow;
   margin-top: 15px;
 }
 .main-banner .container .main-banner__wrapper .main-banner__text {
@@ -517,7 +517,7 @@ body {
   text-underline-position: from-font;
   -webkit-text-decoration-skip-ink: none;
           text-decoration-skip-ink: none;
-  color: #0058DC;
+  color: yellow;
 }
 .projects .container .projects-wrapper .projects-item .projects-item__right .projects-item__main p {
   font-family: Aldrich;

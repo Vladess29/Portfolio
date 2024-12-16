@@ -1,7 +1,9 @@
 .main-banner {
     // background-color: black;
-    background: rgb(0,21,126);
-    background: radial-gradient(circle, rgba(0, 21, 126, 0.719) 0%, rgba(0,0,0,1) 250px);
+    // background: rgb(0,21,126);
+    // background: radial-gradient(circle, rgba(0, 21, 126, 0.719) 0%, rgba(0,0,0,1) 250px);
+    background: rgb(218, 214, 3);
+    background: radial-gradient(circle, rgba(238, 255, 6, 0.479) 0%, rgba(255, 217, 3, 0) 250px);
     background-position: 0 70px;
     background-repeat: no-repeat;
     padding-top: 183px;
@@ -33,7 +35,8 @@
                 text-align: left;
                 text-underline-position: from-font;
                 text-decoration-skip-ink: none;
-                color: #0058DC;
+                // color: #0058DC;
+                color: yellow;
                 margin-top: 15px;
 
             }
