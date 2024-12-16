@@ -11,6 +11,8 @@
     }
     .container {
         .main-banner__wrapper {
+            position: relative;
+            z-index: 105;
             .main-banner__title {
                 font-family: Nexa Bold;
                 font-size: 65px;

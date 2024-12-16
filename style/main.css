@@ -376,6 +376,10 @@ html * {
     padding-top: 90px;
   }
 }
+.main-banner .container .main-banner__wrapper {
+  position: relative;
+  z-index: 105;
+}
 .main-banner .container .main-banner__wrapper .main-banner__title {
   font-family: Nexa Bold;
   font-size: 65px;
@@ -626,7 +630,7 @@ body .leftball {
   body .leftball {
     left: -295px;
     top: -195px;
-    z-index: 99999;
+    z-index: 100;
     width: 635px;
     position: absolute;
   }
