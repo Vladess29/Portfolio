@@ -12,6 +12,20 @@
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("../fonts/Montserrat-Regular.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 :focus, :active {
   outline: none;
 }
@@ -253,32 +267,54 @@ html * {
       -ms-flex-pack: end;
           justify-content: flex-end;
 }
-.header .header-btn {
-  font-family: Aldrich;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 15.65px;
-  text-align: left;
-  text-underline-position: from-font;
-  -webkit-text-decoration-skip-ink: none;
-          text-decoration-skip-ink: none;
+.header a {
+  display: block;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.header a .langEN-btn__wrapper {
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: column-reverse;
+          flex-direction: column-reverse;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+.header a .langEN-btn__wrapper:hover {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.header a .langEN-btn__wrapper .UA {
   color: white;
-  background-color: #0058DC;
-  border-radius: 10px;
-  padding: 16px 19px 13px 19px;
-  margin-right: 38px;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  border: 1px solid transparent;
+  rotate: 180deg;
+  margin-top: -1px;
+  font-family: Nexa Bold;
 }
-.header .header-btn:hover {
-  background-color: transparent;
-  border: 1px solid #0058DC;
+.header a .langEN-btn__wrapper .EN {
+  color: white;
+  position: relative;
+  font-family: Nexa Bold;
 }
-@media (max-width: 400px) {
-  .header .header-btn {
-    margin-right: 20px;
-  }
+.header a .langEN-btn__wrapper .EN::after {
+  content: "";
+  position: absolute;
+  left: -4px;
+  top: 22px;
+  background-color: yellow;
+  width: 30px;
+  height: 2px;
 }
 
 @media (max-width: 767px) {
@@ -677,4 +713,75 @@ body .rightball {
     -webkit-transform: rotate(-180deg);
             transform: rotate(-180deg);
   }
+}
+.header {
+  background-color: black;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+.header a {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.header a .langUA-btn__wrapper {
+  width: 40px;
+  height: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+}
+.header a .langUA-btn__wrapper:hover {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+.header a .langUA-btn__wrapper .ua-second {
+  color: white;
+  position: relative;
+}
+.header a .langUA-btn__wrapper .ua-second::after {
+  content: "";
+  position: absolute;
+  left: -3px;
+  top: 22px;
+  background-color: yellow;
+  width: 30px;
+  height: 2px;
+}
+.header a .langUA-btn__wrapper .en-second {
+  color: white;
+  rotate: 180deg;
+  margin-top: -1px;
+}
+
+html[lang=uk] h1,
+html[lang=uk] h2,
+html[lang=uk] h3,
+html[lang=uk] p,
+html[lang=uk] span,
+html[lang=uk] legend,
+html[lang=uk] a {
+  font-family: "Montserrat" !important;
+}
+
+html[lang=uk] .main-banner__title {
+  font-size: 60px !important;
 }

@@ -7,30 +7,73 @@
     padding-bottom: 30px;
     display: flex;
     justify-content: flex-end;
-    .header-btn {
-        font-family: Aldrich;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 15.65px;
-        text-align: left;
-        text-underline-position: from-font;
-        text-decoration-skip-ink: none;
-        color: white;
-        background-color: #0058DC;
-        border-radius: 10px;
-        padding: 16px 19px 13px 19px;
-        margin-right: 38px;
-        transition: all .3s ease-in-out;
-        border: 1px solid transparent;
+    a {
+        display: block;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        .langEN-btn__wrapper {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
+            transition: all 1s ease-in-out;
+            &:hover {
+                // animation: rotation 1s forwards;
+                transform: rotate(180deg);
+            }
+            .UA {
+                color: white;
+                rotate: (180deg);
+                margin-top: -1px;
+                font-family: Nexa Bold;
+            }
+            .EN {
+                color: white;
+                position: relative;
+                font-family: Nexa Bold;
 
-        &:hover {
-            background-color: transparent;
-            border: 1px solid #0058DC;
-            // border-radius: 10px;
-        }
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: -4px;
+                    top: 22px;
+                    // background-color: white;
+                    background-color: yellow;
+                    width: 30px;
+                    height: 2px;
+                }
 
-        @media (max-width: 400px) {
-            margin-right: 20px;
+            }
         }
     }
 }
+
+    // .header-btn {
+    //     font-family: Aldrich;
+    //     font-size: 16px;
+    //     font-weight: 400;
+    //     line-height: 15.65px;
+    //     text-align: left;
+    //     text-underline-position: from-font;
+    //     text-decoration-skip-ink: none;
+    //     color: white;
+    //     background-color: #0058DC;
+    //     border-radius: 10px;
+    //     padding: 16px 19px 13px 19px;
+    //     margin-right: 38px;
+    //     transition: all .3s ease-in-out;
+    //     border: 1px solid transparent;
+
+    //     &:hover {
+    //         background-color: transparent;
+    //         border: 1px solid #0058DC;
+    //         // border-radius: 10px;
+    //     }
+
+    //     @media (max-width: 400px) {
+    //         margin-right: 20px;
+    //     }
+    // }

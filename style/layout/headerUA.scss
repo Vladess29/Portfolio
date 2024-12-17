@@ -1,0 +1,46 @@
+.header {
+    background-color: black;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    justify-content: flex-end;
+    a {
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        .langUA-btn__wrapper {
+            width: 40px;
+            height: 40px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transition: all 1s ease-in-out;
+            &:hover {
+                // animation: rotation 1s forwards;
+                transform: rotate(180deg);
+            }
+            .ua-second {
+                color: white;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: -3px;
+                    top: 22px;
+                    background-color: yellow;
+                    width: 30px;
+                    height: 2px;
+                }
+            }
+            .en-second {
+                color: white;
+                rotate: (180deg);
+                margin-top: -1px;
+
+            }
+        }
+    }
+}
+
