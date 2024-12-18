@@ -266,6 +266,8 @@ html * {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  position: relative;
+  z-index: 106;
 }
 .header a {
   display: block;
@@ -724,6 +726,8 @@ body .rightball {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  position: relative;
+  z-index: 106;
 }
 .header a {
   width: 30px;
