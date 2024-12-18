@@ -257,7 +257,7 @@ html * {
 }
 
 .header {
-  background-color: black;
+  background-color: transparent;
   padding-top: 30px;
   padding-bottom: 30px;
   display: -webkit-box;
@@ -717,7 +717,7 @@ body .rightball {
   }
 }
 .header {
-  background-color: black;
+  background-color: transparent;
   padding-top: 30px;
   padding-bottom: 30px;
   display: -webkit-box;
