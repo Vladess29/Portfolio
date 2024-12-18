@@ -25,6 +25,9 @@
             &:hover {
                 // animation: rotation 1s forwards;
                 transform: rotate(180deg);
+                @media (max-width: 1024px) {
+                    transform: none;
+                }
             }
             .UA {
                 color: white;
