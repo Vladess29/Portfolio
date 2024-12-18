@@ -4,6 +4,8 @@
     padding-bottom: 30px;
     display: flex;
     justify-content: flex-end;
+    position: relative;
+    z-index: 106;
     a {
         width: 30px;
         height: 30px;
