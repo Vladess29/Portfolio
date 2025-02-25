@@ -25,6 +25,13 @@
                     margin-top: 30px;
                     position: relative;
                     // right: 0;
+                    opacity: 0; 
+                    transform: translateX(-50px); 
+                    transition: opacity 0.5s ease, transform 0.5s ease; 
+                    &.show {
+                        opacity: 1; 
+                        transform: translateX(0); 
+                    }
                     @media (max-width: 1024px) {
                         display: none;
                     }
@@ -35,6 +42,14 @@
                 .projects-item__right {
                     display: flex;
                     justify-content: space-between;
+
+                    opacity: 0; 
+                    transform: translateY(-50px); 
+                    transition: opacity 0.5s ease, transform 0.5s ease; 
+                    &.show {
+                        opacity: 1; 
+                        transform: translateY(0); 
+                    }
 
                     @media (max-width: 1023px) {
                         flex-direction: column-reverse;

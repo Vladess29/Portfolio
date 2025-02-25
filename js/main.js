@@ -1,31 +1,3 @@
-// // ===== Mobile menu script ===== \\
-// const burgerBtn = document.querySelector('.burger-menu');
-// const mobileMenu = document.querySelector('.mobile-popup');
-// burgerBtn.addEventListener('click', function() {
-//     this.classList.toggle('active');
-//     mobileMenu.classList.toggle('active');
-// });
-
-// // ===== Accordion ===== \\
-// document.querySelectorAll('.accordion-item__title').forEach(button => {
-//     button.addEventListener('click', () => {
-//       const accordionItem = button.parentElement;
-//       const isActive = accordionItem.classList.contains('active');
-  
-//       document.querySelectorAll('.accordion-item').forEach(item => {
-//         item.classList.remove('active');
-//         item.querySelector('.accordion-content').style.maxHeight = null;
-//       });
-  
-//       if (!isActive) {
-//         accordionItem.classList.add('active');
-//         const content = accordionItem.querySelector('.accordion-content');
-//         content.style.maxHeight = content.scrollHeight + 'px';
-//       }
-//     });
-//   });
-
-// slider
 
 $(document).ready(function(){
     $('.skill-slider').slick({
@@ -72,29 +44,21 @@ $(document).ready(function(){
     });
   });
 
-// //   pop up
+  // Lazy Loading
 
-// const popupBtn = document.querySelector('.header-btn'); // находим кнопку по её классу
-// const popup = document.querySelector('.popup-bg'); // находим попап по его классу
-// const closeBtn = document.querySelector('.close-popup'); // находим кнопку закрытия попапа по её классу
-// const html = document.querySelector('html');
+  const projectItems = document.querySelectorAll('.projects-item__right, .projects-item__arrow');
 
-// // Ниже мы отслеживаем клик по кнопке, которая вызвает попап
-// popupBtn.addEventListener('click', function() {
-//     popup.classList.add('active'); // тут мы добавляем класс active к попапу
-//     html.classList.add('no-scroll');
-// });
+function checkVisibility() {
+  projectItems.forEach(item => {
+    const itemTop = item.getBoundingClientRect().top;
+    const triggerPoint = window.innerHeight * 0.8;
 
-// // Ниже мы отслеживаем клик по кнопке, которая закрывает попап
-// closeBtn.addEventListener('click', function() {
-//     popup.classList.remove('active'); // тут мы удаляем класс active к попапу
-//     html.classList.remove('no-scroll');
-// });
+    if (itemTop < triggerPoint) {
+      item.classList.add('show');
+    }
+  });
+}
 
-// // ===== Mobile menu script ===== \\
-// const burgerBtn = document.querySelector('.burger-menu');
-// const mobileMenu = document.querySelector('.mobile-popup');
-// burgerBtn.addEventListener('click', function() {
-//     this.classList.toggle('active');
-//     mobileMenu.classList.toggle('active');
-// });
+window.addEventListener('scroll', checkVisibility);
+checkVisibility();
+

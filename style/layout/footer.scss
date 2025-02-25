@@ -57,8 +57,26 @@
                         &:nth-child(3) {
                             margin-left: 30px;
                         }
-                        img {
+                        // img {
 
+                        // }
+                        .inst-svg {
+                            fill: #fff;
+                            transition: all .3s ease-in-out;
+                            width: 32px;
+                            height: 32px;
+                            &:hover {
+                                fill: gray;
+                            }
+                        }
+                        .telegram-svg {
+                            fill: #fff;
+                            transition: all .3s ease-in-out;
+                            width: 30px;
+                            height: 30px;
+                            &:hover {
+                                fill: grey;
+                            }
                         }
                     }
                 }

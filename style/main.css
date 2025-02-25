@@ -394,6 +394,26 @@ html * {
 .footer .container fieldset .footer-content__wrapper .footer-icons a:nth-child(3) {
   margin-left: 30px;
 }
+.footer .container fieldset .footer-content__wrapper .footer-icons a .inst-svg {
+  fill: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 32px;
+  height: 32px;
+}
+.footer .container fieldset .footer-content__wrapper .footer-icons a .inst-svg:hover {
+  fill: gray;
+}
+.footer .container fieldset .footer-content__wrapper .footer-icons a .telegram-svg {
+  fill: #fff;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 30px;
+  height: 30px;
+}
+.footer .container fieldset .footer-content__wrapper .footer-icons a .telegram-svg:hover {
+  fill: grey;
+}
 .footer .container fieldset .footer-content__wrapper p {
   font-family: Nexa Bold;
   font-size: 14px;
@@ -512,6 +532,18 @@ body {
 .projects .container .projects-wrapper .projects-item .projects-item__arrow {
   margin-top: 30px;
   position: relative;
+  opacity: 0;
+  -webkit-transform: translateX(-50px);
+          transform: translateX(-50px);
+  -webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
+  transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+.projects .container .projects-wrapper .projects-item .projects-item__arrow.show {
+  opacity: 1;
+  -webkit-transform: translateX(0);
+          transform: translateX(0);
 }
 @media (max-width: 1024px) {
   .projects .container .projects-wrapper .projects-item .projects-item__arrow {
@@ -525,6 +557,18 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  opacity: 0;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+  -webkit-transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
+  transition: opacity 0.5s ease, -webkit-transform 0.5s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease;
+  transition: opacity 0.5s ease, transform 0.5s ease, -webkit-transform 0.5s ease;
+}
+.projects .container .projects-wrapper .projects-item .projects-item__right.show {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
 }
 @media (max-width: 1023px) {
   .projects .container .projects-wrapper .projects-item .projects-item__right {
