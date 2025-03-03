@@ -78,6 +78,15 @@
                                 fill: grey;
                             }
                         }
+                        .linkedin-svg {
+                            fill: #FFFFFF;
+                            transition: all .3s ease-in-out;
+                            width: 29px;
+                            height: 29px;
+                            &:hover {
+                                fill: grey;
+                            }
+                        }
                     }
                 }
                 p {

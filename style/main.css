@@ -414,6 +414,16 @@ html * {
 .footer .container fieldset .footer-content__wrapper .footer-icons a .telegram-svg:hover {
   fill: grey;
 }
+.footer .container fieldset .footer-content__wrapper .footer-icons a .linkedin-svg {
+  fill: #FFFFFF;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  width: 29px;
+  height: 29px;
+}
+.footer .container fieldset .footer-content__wrapper .footer-icons a .linkedin-svg:hover {
+  fill: grey;
+}
 .footer .container fieldset .footer-content__wrapper p {
   font-family: Nexa Bold;
   font-size: 14px;
