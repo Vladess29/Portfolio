@@ -16,7 +16,7 @@
             position: relative;
             z-index: 105;
             .main-banner__title {
-                font-family: Nexa Bold;
+                font-family: "Nexa Bold";
                 font-size: 65px;
                 font-weight: 700;
                 line-height: 65px;
@@ -26,7 +26,21 @@
                 text-decoration-skip-ink: none;
                 color: white;
 
+                @media (max-width: 500px) {
+                    font-size: 55px;
+                    font-weight: 400;
+                }
+
             }
+            // .UAtitle {
+            //     font-family: 'Montserrat';
+            //     font-size: 65px;
+            //     @media (max-width: 500px) {
+            //         font-size: 45px;
+            //         font-weight: 200;
+            //         color: aqua;
+            //     }
+            // }
             h2 {
                 font-family: Aldrich;
                 font-size: 28px;

@@ -46,7 +46,7 @@ $(document).ready(function(){
 
   // Lazy Loading
 
-  const projectItems = document.querySelectorAll('.projects-item__right, .projects-item__arrow');
+  const projectItems = document.querySelectorAll('.projects-item__right, .projects-item__arrow, .works-item__wrapper');
 
 function checkVisibility() {
   projectItems.forEach(item => {
@@ -58,6 +58,12 @@ function checkVisibility() {
     }
   });
 }
+
+// gallery
+
+Fancybox.bind("[data-fancybox]", {
+  // Your custom options
+});
 
 window.addEventListener('scroll', checkVisibility);
 checkVisibility();

@@ -7,6 +7,10 @@
   <link rel="stylesheet" href="style/main.css">
   <link rel="stylesheet" href="style/slick.css">
   <link rel="icon" href="img/favicon.png" type="image/png">
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"
+/>
   <title>Vladyslav Frolov</title>
 </head>
 <body>
@@ -33,11 +37,6 @@
       <div class="main-banner__wrapper">
         <h1 class="main-banner__title">Vladyslav Frolov</h1>
         <h2>Front-end developer</h2>
-        <!-- <p class="main-banner__text">Hi, my name is Vladislav. I`m <span>front-end developer</span>.
-          I`m developing sites using <span>HTML and CSS</span>. Also I`m working with <span>JavaScript and PHP</span>, but I`m in the process of learning this technologies. <br>
-          I develop <span>adaptive sites for various devices</span>: smartphones, tablets, large-format monitors. <br>
-          I have <span>good communications skills</span>, so I quickly find understanding with a designer, colleague or client.</p> -->
-
           <p class="main-banner__text"> Hi, my name is Vlad. I’m a <span>Front-end developer</span>. I specialize in creating websites using <span>HTML, CSS</span>, and I have experience working with <span>JavaScript</span>. <br> I’m continuously improving my skills in these technologies to stay up-to-date with modern development practices.
 
             I develop <span>adaptive, user-friendly websites</span> optimized for various devices, including smartphones, tablets, and large-format monitors. <br>
@@ -157,6 +156,51 @@
     </div>
   </section>
 
+  <section class="works">
+    <div class="container">
+      <div class="title works">
+        <h2>My Projects</h2>
+        <div class="line">
+          <div class="line--item"></div>
+          <div class="line--dot"></div>
+        </div>
+      </div>
+      <div class="works-wrapper">
+        <div class="works-item__wrapper">
+          <div class="works-item">
+            <a href="/img/works/boldo-fullsize.png" data-fancybox="gallery-boldo" data-caption="Caption #1"><img src="/img/works/boldo.png" alt=""></a>
+          </div>
+        </div>
+        <div class="works-item__wrapper">
+          <div class="works-item">
+            <a href="/img/works/Locus-fullsize.png" data-fancybox="gallery-locus" data-caption="Caption #1"><img src="/img/works/locus.png" alt=""></a>
+          </div>
+        </div>
+        <div class="works-item__wrapper">
+          <div class="works-item">
+            <a href="/img/works/odigo-fullsize.png" data-fancybox="gallery-odigo" data-caption="Caption #1"><img src="/img/works/odigo.png" alt=""></a>
+          </div>
+        </div>
+        <div class="works-item__wrapper">
+          <div class="works-item">
+            <a href="/img/works/Clerksy-fullsize.png" data-fancybox="gallery-clerksy" data-caption="Caption #1"><img src="/img/works/clerksy.png" alt=""></a>
+          </div>
+        </div>
+        <div class="works-item__wrapper">
+          <div class="works-item">
+            <a href="/img/works/servicecom-fullsize.png" data-fancybox="gallery-service" data-caption="Caption #1"><img src="/img/works/serviceCom.png" alt=""></a>
+          </div>
+        </div>
+        <div class="works-item__wrapper">
+          <div class="works-item">
+            <a href="/img/works/Escape-fullsize.png" data-fancybox="gallery-escape" data-caption="Caption #1"><img src="/img/works/escape.png" alt=""></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
   <footer class="footer">
     <div class="container">
       <fieldset>
@@ -167,6 +211,7 @@
             <a href="https://www.instagram.com/_vladess__?igsh=YTBpeGczdXYzMTR1"><svg class="inst-svg"><use xlink:href="#inst"></use></svg></a>
             <a href="https://t.me/Vladess_29"><svg class="telegram-svg"><use xlink:href="#teleg"></use></svg></a>
             <a href="https://www.linkedin.com/in/vladyslav-frolov-a665b0354"><svg class="linkedin-svg"><use xlink:href="#link"></use></svg></a>
+            <a href="https://github.com/Vladess29"><svg class="github-svg"><use xlink:href="#github"></use></svg></a>
             
           </div>
           <p>Copyright © 2024 All Rights Reserved</p>
@@ -195,9 +240,16 @@
       <path fill-rule="evenodd" clip-rule="evenodd" d="M20 1C21.6569 1 23 2.34315 23 4V20C23 21.6569 21.6569 23 20 23H4C2.34315 23 1 21.6569 1 20V4C1 2.34315 2.34315 1 4 1H20ZM20 3C20.5523 3 21 3.44772 21 4V20C21 20.5523 20.5523 21 20 21H4C3.44772 21 3 20.5523 3 20V4C3 3.44772 3.44772 3 4 3H20Z" fill=""/>
     </symbol>
   </svg>
+  <svg display="none">
+    <symbol id="github" viewBox="0 0 16 16">
+      <path fill="" fill-rule="evenodd" d="M8 1C4.133 1 1 4.13 1 7.993c0 3.09 2.006 5.71 4.787 6.635.35.064.478-.152.478-.337 0-.166-.006-.606-.01-1.19-1.947.423-2.357-.937-2.357-.937-.319-.808-.778-1.023-.778-1.023-.635-.434.048-.425.048-.425.703.05 1.073.72 1.073.72.624 1.07 1.638.76 2.037.582.063-.452.244-.76.444-.935-1.554-.176-3.188-.776-3.188-3.456 0-.763.273-1.388.72-1.876-.072-.177-.312-.888.07-1.85 0 0 .586-.189 1.924.716A6.711 6.711 0 018 4.381c.595.003 1.194.08 1.753.236 1.336-.905 1.923-.717 1.923-.717.382.963.142 1.674.07 1.85.448.49.72 1.114.72 1.877 0 2.686-1.638 3.278-3.197 3.45.251.216.475.643.475 1.296 0 .934-.009 1.688-.009 1.918 0 .187.127.404.482.336A6.996 6.996 0 0015 7.993 6.997 6.997 0 008 1z" clip-rule="evenodd"/></svg>
+    </symbol>
+  </svg>
 
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
     <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
     <script src="js/slick.min.js"></script>
+    
 </body>
 </html>
